@@ -1,10 +1,44 @@
-<div class="hero-unit">
-	<h1>Creative Collaboration</h1>
+<% if user_signed_in? %>
+  <div class="hero-unit">
+    <h1>Thank you for signing up!</h1>
+    <p> </p>
+    <p>The site is not running yet, but you will be inform as soon as we launch!</p>
+    <p> </p>
+    <p><i class="icon-heart"></i></p>
+  </div>
+<% else %>
+  <div class="hero-unit">
+  	<h1>Creative Collaboration</h1>
 
-	<p>
-		Connect and collaborate with other passionate creatives around the world!
-	</p>
-	<p>
-		<%= link_to "Sign up Now!", "#", class: "btn btn-success btn-large" %>
-	</p>
-</div>
+  	<p>
+  		Connect and collaborate with other passionate creatives around the world!
+  	</p>
+  	<p>
+  		<%= link_to "Sign up Now!", new_user_registration_path, class: "btn btn-success btn-large" %>
+  	</p>
+  </div>
+  <ul class="thumbnails">
+    <li class="span4">
+      <div class="thumbnail">
+        <img src="http://www.inc.com/uploaded_files/image/042312_Visionary2_575x270-panoramic_15914.jpg" alt="" class="img-rounded">
+        <h3>A Community of talented visionaires</h3>
+        <p>With an invite only access, our goal is to separate the good from the great and gather a network of visionary professionals.</p>
+      </div>
+    </li>
+    <li class="span4">
+      <div class="thumbnail">
+        <img src="http://blakethompson.net/wp-content/uploads/2011/09/working-in-a-coffee-shop.jpg" alt="" class="img-rounded">
+        <h3>Remote Collaboration, easy!</h3>
+        <p>Working together as never been more satisfying. We empower our users by solving offline collaboration obstacles: Flawless communication, constructive feedback and automatic organisation are the norm.</p>
+      </div>
+  </li>
+      <li class="span4">
+      <div class="thumbnail">
+        <img src="http://www.myej.org/wp-content/uploads/2012/10/Inspiration.jpg" alt="" class="img-rounded">
+        <h3>Inspire and be inspired</h3>
+        <p>Jump in revolutionary visions, shape the future with collaborators or conquer hearts and minds with your own idea...What are you going to do today?</p>
+      </div>
+    </li>
+    
+  </ul>
+<% end %>
