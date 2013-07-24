@@ -1,15 +1,20 @@
+<!-- Spacing is hardcoded because I couldn't use Simple-form gem properly -->
+
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
+<p>  </p>
 
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, class: 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
 
+  <%= f.input :name, :input_html => { :class => "span6" }%>
+  <p>  </p>
   <%= f.input :email, :input_html => { :class => "span6" }%>
   <p>  </p>
   <%= f.input :password, :input_html => { :class => "span6" },  label: "New Password", autocomplete: "off" %>
   <p>  </p>
   <%= f.input :password_confirmation, :input_html => { :class => "span6" }, label: "New Password Confirmation", autocomplete: "off" %>
   <p>  </p>
-  <%= f.input :current_password %>
+  <%= f.input :current_password, :input_html => { :class => "span6" }, label: "Cuurent Password", autocomplete: "off" %>
 
   <div class="form-actions">
     <%= f.submit "Update", class: "btn btn-success"%>

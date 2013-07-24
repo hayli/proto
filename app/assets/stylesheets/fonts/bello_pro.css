@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'BelloProRegular';
+    src: url('bello_pro.eot');
+    src: url('bello_pro.eot') format('embedded-opentype'),
+         url('bello_pro.woff') format('woff'),
+         url('bello_pro.ttf') format('truetype'),
+         url('bello_pro.svg#BelloProRegular') format('svg');
+}

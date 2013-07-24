@@ -1,14 +1,41 @@
 @import 'bootstrap';
 
+@font-face {
+    font-family: 'BelloProRegular';
+    src: url('../app/assets/stylesheets/fonts/bello_pro.eot');
+    src: url('../app/assets/stylesheets/fonts/bello_pro.eot') format('embedded-opentype'),
+         url('../app/assets/stylesheets/fonts/bello_pro.woff') format('woff'),
+         url('../app/assets/stylesheets/fonts/bello_pro.ttf') format('truetype'),
+         url('../app/assets/stylesheets/fonts/bello_pro.svg#BelloProRegular') format('svg');
+}
+
+
 .navbar .brand {
 	color: #20B5E3;
+	font-family: 'BelloProRegular';
+	font-size: 28px;
+	padding: 15px 20px 0px 20px;
 
 }
+
 
 .navbar .brand:hover {
 	color: #18A5C4;
 
 }
+
+.nav .icon-user {
+	margin-top: 3px;
+	padding: 0px 5px 0px 0px;
+	opacity: 0.5;
+}
+
+.nav .loginAndIcon:hover {
+	margin-top: 3px;
+	padding: 0px 5px 0px 0px;
+	opacity: 1;
+}
+
 
 body {
 	padding-top: 60px;

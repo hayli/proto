@@ -1,8 +1,15 @@
+<!-- Spacing is hardcoded because I couldn't use Simple-form gem properly -->  
+
 <h2>Sign in</h2>
+<p>  </p>
 
 <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => 'form-horizontal' }) do |f| %>
+	
+	<%= f.error_notification %>
 
 
+  <%= f.input :name, :input_html => { :class => "span6" }%>
+  <p>  </p>
   <%= f.input :email, :input_html => { :class => "span6" }%>
   <p>  </p>
   <%= f.input :password, :input_html => { :class => "span6" }%>
